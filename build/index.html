@@ -1,0 +1,48 @@
+<html><head><!-- Shady DOM styles for custom-style --><!-- Shady DOM styles for dom-template --><!-- Shady DOM styles for dom-repeat --><!-- Shady DOM styles for array-selector --><!-- Shady DOM styles for dom-if --><!-- Shady DOM styles for login-panel --><style scope="login-panel">login-panel {
+  margin: 0 auto;
+}
+
+form.login-panel {
+  width: 200px;
+            height: 150px;
+            padding: 10px;
+            box-shadow: 1px 1px 1px gray;
+            margin: 0 auto;
+}
+
+.form-group.login-panel {
+  width: 150px;
+            margin: 10px auto;
+}
+
+.form-group.login-panel *.login-panel {
+  margin-top: 8px;
+}</style><style>body {transition: opacity ease-in 0.2s; } 
+body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relative; } 
+</style>
+	<style>template{display:none;}</style><title>static webpage</title>
+	<script src="bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+	<link rel="import" href="components/login.html">
+</head>
+
+<body>
+	<login-panel>
+        
+        <form name="login" class="style-scope login-panel">
+            <div class="form-group style-scope login-panel">
+                <label for="account" class="style-scope login-panel">帐号</label>
+                <input id="account" type="text" placeholder="请输入您的帐号" class="style-scope login-panel">
+            </div>
+            <div class="form-group style-scope login-panel">
+                <label for="password" class="style-scope login-panel">密码</label>
+                <input type="password" id="password" class="style-scope login-panel">
+            </div>
+            <div class="form-group style-scope login-panel">
+                <button type="button" id="confirm" class="style-scope login-panel">确定</button>
+                <button type="button" id="cancel" class="style-scope login-panel">取消</button>
+            </div>
+        </form>
+    </login-panel>
+
+
+</body></html>
